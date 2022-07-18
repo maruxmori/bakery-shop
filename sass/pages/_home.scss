@@ -1,0 +1,142 @@
+.nosotros-grid{
+    color: $blanco;
+    display: grid;
+    grid-template-columns: repeat(20, 1fr);
+    grid-template-rows: repeat(8, 6rem);
+    align-items: center;
+
+    &-texto{
+        background-color: $celeste;
+        grid-column-start: 3;
+        grid-column-end: 12;
+        grid-row-start: 4;
+        grid-row-end: 8;
+        height: 100%;
+        width: 100%;
+        padding-left: 2rem;
+        line-height: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        .button{
+            text-align: center;
+        }
+    }
+}
+
+.nosotros-img{
+    position: absolute;
+    display: grid;
+    grid-template-columns: repeat(20, 1fr);
+    grid-template-rows: repeat(8, 6rem);
+    color: $blanco;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    
+    animation-duration: 0.9s;
+    animation-name: fadeIzq;
+}
+
+.nosotros-img div{
+    grid-column-start: 9;
+    grid-column-end: 19;
+    grid-row-start: 2;
+    grid-row-end: 7;
+}
+
+.nosotros-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.product{
+    display: grid;
+    grid-template-columns: repeat(20, 1fr);
+    grid-template-rows: 100vh;
+
+    @include mobile{
+        grid-template-rows: 1fr;
+    }
+    &-card{
+        grid-column-start: 1;
+        grid-column-end: 13;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $celeste;
+
+        @include mobile{
+            grid-column-start: 1;
+            grid-column-end: 21;
+        }
+        .button{
+            position: absolute;
+        }
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0.6;    
+        }
+    }
+
+    &-text{
+        grid-column-start: 13;
+        grid-column-end: 20;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        
+        @include mobile{
+            grid-column-start: 1;
+            grid-column-end: 21;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        &-link{
+            //padding: 0.3rem;
+            margin-bottom: 1rem;
+            border-bottom: solid $celeste 1px;
+            width: 50%;
+            height: 4rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: ease-in-out .3s;
+            &:hover{
+                width: 70%;
+                letter-spacing: 2px;
+                & .arrow{
+                    opacity: 1;
+                }
+            }
+            & .arrow{
+                width: 20px;
+                height: auto;
+                opacity: 0.5;
+            }
+
+            a{
+                color: $celeste;
+                font-size: 2rem;
+                font-weight: 300;
+                padding-left: 1rem;
+                width: 100%;
+                &:hover .product-text-link{
+                    width: 80%;
+                }
+            }
+        }
+    }
+
+    .tittle-section{
+        font-size: 5vw;
+        @include mobile{
+            font-size: 10vw;
+        }
+    }
+}

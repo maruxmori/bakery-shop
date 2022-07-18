@@ -1,0 +1,57 @@
+
+button{
+    border: none;
+}
+
+.button-azul{
+    background-color: $celeste;
+    color: $blanco;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 10px;
+    margin: 0.5rem;
+    width: 7em;
+    font-family: 'Poppins';
+    box-shadow: #437fe8 1px 1px;
+    transition: ease-in-out .4s;
+    &:hover{
+        box-shadow: #437fe8 2px 4px;
+        transform: translateX(-2px) translateY(-4px);
+    }
+}
+
+.button{
+    background-color: rgba(255, 255, 255, 0.3);
+    border: solid $blanco 2px;
+    color: $blanco;
+    border-radius: 12px;
+    box-shadow: rgba(128, 128, 128, 0.573) 4px 2px;
+    width: 7rem;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    font-family: 'Comfortaa';
+    text-shadow: 1px 1px 1px#9f9f9fb8;
+    transition: ease-in-out .4s;
+
+    &:hover{
+        color: $gris;
+        background-color: #f9f9f9c5;
+        box-shadow: rgba(151, 150, 150, 0.626) 6px 4px;
+        transform: translateX(-2px) translateY(-2px);
+    }
+}
+
+.second{
+    @extend .button;
+    background-color:  rgba(151, 150, 150, 0.626);
+    transition: ease-in-out .3s;
+    &:hover{
+        color: $gris;
+        background-color: #f9f9f9c5;
+        box-shadow: rgba(151, 150, 150, 0.626) 6px 4px;
+        transform: translateX(-2px) translateY(-2px);
+    }
+}

@@ -1,0 +1,50 @@
+/* -- Footer --*/
+
+footer{
+    background-color: $celeste;
+    color: $blanco;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    @include mobile{
+        flex-direction: column;
+    }
+}
+
+.footer-logo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Comfortaa', cursive;
+}
+.footer-logo p{
+    font-size: 0.8rem;
+}
+.logo-footer{
+    font-size: 3rem;
+    font-weight: 900;
+    -webkit-background-clip: text;
+    -webkit-text-stroke: 1px $blanco;
+    -webkit-text-fill-color: transparent;
+    text-shadow: rgba(128, 128, 128, 0.4) 2px 2px 5px;
+    margin: 0.5rem;
+    letter-spacing: 5px;
+}
+.logo-footer span{
+    -webkit-text-fill-color: #ffffff39;
+    font-size: 4rem;
+}
+
+.footer-nav li, .footer-product li{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+.footer-product > p{
+    border-bottom: solid 1px $blanco;
+    padding-right: 3rem;
+}
+.footer-link{
+    color: $blanco;
+    font-weight: 200;
+    letter-spacing: 1px;
+}

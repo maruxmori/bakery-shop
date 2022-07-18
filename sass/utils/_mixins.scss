@@ -1,0 +1,55 @@
+@mixin mobile {
+    @media only screen /*and (min-width: 0px)*/ and (max-width: 920px){
+        @content;
+    }
+}
+
+/*
+@media only screen and (min-width: 0px) and (max-width: 920px){
+    
+    
+    .banner-img-left{
+        grid-column-start: 1;
+        grid-column-end: 5;
+        grid-row-start: 1;
+        grid-row-end: 9;
+    }
+    .banner-img-right{
+        grid-column-start: 3;
+        grid-column-end: 6;
+        grid-row-start: 4;
+        grid-row-end: 11;
+    }
+    .banner-img-right img{
+        filter: brightness(1);
+        padding: 0;
+        background-color: #F9F9F9;
+        padding-top: 1rem;
+        padding-left: 1rem;
+    }
+    .grid-titulo-container{
+        font-size: 1.2rem;
+        padding: 0.1rem;
+    }
+    .tittle-section{
+        font-size: 2rem;
+    }
+    
+    .nosotros-grid-texto{
+        grid-column-start: 2;
+        grid-column-end: 16;
+        grid-row-start: 5;
+        grid-row-end: 8;
+        position: relative;
+        z-index: 1;
+    }
+    .nosotros-img div{
+        grid-column-start: 6;
+        grid-column-end: 20;
+        grid-row-start: 2;
+        grid-row-end: 7;
+    }
+
+}
+
+*/

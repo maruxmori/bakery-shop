@@ -1,8 +1,8 @@
 //Navbar
-let toggleButton = document.getElementById('button-menu');
-let showModal = document.getElementById('modal');
+let buttonNav = document.getElementById('button-menu');
+let mostrarModal = document.getElementById('modal');
 
-toggleButton.addEventListener('click',() => {
-  showModal.classList.toggle('show');
-  toggleButton.classList.toggle('close');
+buttonNav.addEventListener('click',() => {
+  mostrarModal.classList.toggle('show');
+  buttonNav.classList.toggle('close');
 });
